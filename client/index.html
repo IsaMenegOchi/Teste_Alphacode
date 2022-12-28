@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scripts/main.js" defer type="module"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Teste Alphacode</title>
+</head>
+<body>
+    
+	<header>
+        <nav class="navbar navbar-dark" style="background-color: var(--main-color);">
+            <div class="container-fluid" >
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/logo_alphacode.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-center">
+                    Cadastro de contatos
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form class="form">
+            <div class="row g-3">
+
+            	<input type="hidden" id="input-id-person">
+            
+                <div class="col left input-text">
+                    <label for="formGroupExampleInput" class="form-label">Nome completo</label>
+                    <input type="text" class="form-control" id="input-full-name" placeholder="Ex.: Letícia Pacheco dos Santos" aria-label="Ex.: Letícia Pacheco dos Santos">
+                </div>
+    
+                <div class="col input-text">
+                    <label for="formGroupExampleInput" class="form-label">Data de nascimento</label>
+                    <input type="text" class="form-control" id="input-date-of-birth" placeholder="Ex.: 03/10/2003" aria-label="Ex.: 03/10/2003">
+                </div>
+
+            </div>
+    
+            <div class="row g-3">
+                <div class="col left input-text">
+                    <label for="formGroupExampleInput" class="form-label">E-mail</label>
+                    <input type="text" class="form-control" id="input-email" placeholder="Ex.: leticia@gmail.com" aria-label="Ex.: leticia@gmail.com">
+                </div>
+    
+                <div class="col input-text">
+                    <label for="formGroupExampleInput" class="form-label">Profissão</label>
+                    <input type="text" class="form-control" id="input-occupation" placeholder="Ex.: Desenvolvedora Web" aria-label="Ex.: Desenvolvedora Web">
+                </div>
+            </div>
+    
+            <div class="row g-3">
+                <div class="col left input-text">
+                    <label for="formGroupExampleInput" class="form-label">Telefone para contato</label>
+                    <input type="text" class="form-control" id="input-phone-contact" placeholder="Ex.: (11) 4033-2019" aria-label="Ex.: (11) 4033-2019">
+                </div>
+    
+                <div class="col input-text">
+                    <label for="formGroupExampleInput" class="form-label">Celular para contato</label>
+                    <input type="tel" maxlength="15" class="form-control" id="input-cellphone-contact" placeholder="Ex.: (11) 98493-2039" aria-label="Ex.: (11) 98493-2039" >
+                </div>
+            </div>
+    
+            <div class="row g-3" id="check">
+            	<div class="col">
+                	<input class="form-check-input" type="checkbox" value="" id="check-whatsapp">
+                	<label class="form-check-label" for="flexCheckDefault">Número de celular possui Whatsapp</label>
+                </div>
+                
+                <div class="col">
+                    <input class="form-check-input" type="checkbox" value="" id="check-email-notification">
+                    <label class="form-check-label" for="flexCheckChecked">Enviar notificações por E-mail</label>
+                </div>
+            </div>
+
+            <div class="row g-3" id="check">
+            	<div class="col">
+                	<input class="form-check-input" type="checkbox" value="" id="check-sms-notification">
+                	<label class="form-check-label" for="flexCheckDefault">Enviar notificações por SMS</label>
+                </div>
+    		</div>
+
+			<div id="container-register-button">
+            	<button class="btn btn-primary" id="btn_register-contact" type="button">Cadastrar contato</button>
+        	</div>
+        
+			<div id="container-edit-buttons" style="display: none;">
+            	<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+					<button class="btn btn-danger" id="btn_cancel-edition" type="button">Cancelar</button>
+				</div>
+				<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                	<button class="btn btn-success" id="btn_save-edition" type="button">Salvar</button>
+				</div>
+        	</div>
+            
+        </form>
+    
+        <hr>
+		
+    	<table class="table">
+            <thead>
+            	<tr>
+                	<th scope="col">Nome</th>
+                	<th scope="col">Data de Nascimento</th>
+                	<th scope="col">E-mail</th>
+                	<th scope="col">Celular para contato</th>
+                	<th scope="col">Ações</th>
+            	</tr>
+            </thead>
+
+            <tbody>
+            	
+            </tbody>
+        </table>
+        
+    </main>
+    
+        <footer class="text-center text-lg-start">
+
+            <div class="text-scenter">Termos | Políticas</div>
+
+            <div class="text-center p-3">
+            	© 2020 Copyright | Desenvolvido por <a href="https://site.alphacode.com.br/"><img class="logo-alphacode" src="./assets/logo_rodape_alphacode.png" alt="Logo alphacode"></a>
+            </div>
+
+            <div class="text-scenter">@Alphacode IT Solutions 2022</div>
+        
+		</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+:root{
+    --main-color: #068ED0;
+    --second-color: #C3C3C3;
+}
+
+/* MAIN */
+main{
+    margin: 5%;
+    position: relative;
+}
+
+.input-text{
+    margin: 50px 0px 40px 0px;
+}
+
+.left{
+    margin: 0px 50px 40px 0px;
+}
+
+.col > .form-control {
+    border: 0;
+    border-bottom: 2px solid var(--second-color);
+    border-radius: 0;
+    padding: 0;
+    color: var(--second-color);
+}
+
+.col:hover .form-control, .col > .form-control:focus {
+    border-bottom: 2px solid var(--main-color);
+    box-shadow: none;
+}
+
+.col:hover .form-label, .col:focus-within .form-label  {
+    color: var(--main-color);
+}
+
+#check{
+    margin-bottom: 30px;
+}
+
+/* buttons */
+#container-register-button{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#container-register-button > #btn_register-contact{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    margin-bottom: 50px;
+}
+
+#container-register-button > #btn_register-contact:hover{
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+#container-edit-buttons{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.btn-actions{
+    border: none;
+}
+
+/* Table */
+.table{
+    box-shadow: 2px 2px 5px var(--second-color);
+    margin-top: 50px;
+    text-align: center;
+}
+
+thead{
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+/* FOOTER */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-alphacode{
+    max-width: 100px;
+}
+.text-center{
+    background-color: var(--main-color);
+    color: white;
+}
